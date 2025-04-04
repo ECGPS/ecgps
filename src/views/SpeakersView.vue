@@ -49,12 +49,11 @@
 <script setup lang="ts">
 import { onMounted, ref, watch } from 'vue'
 import { useRoute } from 'vue-router';
-
-// 组织者数据
+const baseUrl = import.meta.env.BASE_URL;
 const speakers = [
   {
     name: 'Amy Arnsten',
-    image: '/AmyArnsten.jpg',
+    image: `${baseUrl}AmyArnsten.jpg`,
     institutions:
       [
         'Albert E. Kent Professor of Neuroscience and Professor of Psychology',
@@ -69,7 +68,7 @@ const speakers = [
   },
   {
     name: 'Haruhiko Bito',
-    image: '/HaruhikoBito.jpg',
+    image: `${baseUrl}HaruhikoBito.jpg`,
     institutions:
       [
         'Professor and Chair, Department of Neurochemistry',
@@ -86,7 +85,7 @@ const speakers = [
 
   {
     name: 'Yue Li',
-    image: '/yueli.jpg',
+    image: `${baseUrl}yueli.jpg`,
     institutions: [
       'State Key Laboratory of Medical Neurobiology',
       'MOE Frontiers Center for Brain Science',
@@ -99,7 +98,7 @@ const speakers = [
   },
   {
     name: 'Jifan Shi',
-    image: '/JifanShi.png',
+    image: `${baseUrl}JifanShi.png`,
     institutions: ['Research Institute of Intelligent Complex Systems,Fudan University'],
     bio: [
       "Ji-Fan Shi is a Junior Associate Researcher at the Research Institute of Intelligent Complex Systems. He obtained both his Bachelor's and Ph.D. degrees in Computational Mathematics from the School of Mathematical Sciences at Peking University. Prior to joining Fudan University in May 2022, he held positions at the Institute of Industrial Science and the International Research Center for Neurointelligence at the University of Tokyo. In May 2021, he was selected for the Shanghai Leading (Overseas) Young Talent Program, and in 2023, he was included in the National Young Talent Program. His primary research interests lie in computational biology and the mathematical theory of complex life systems, with a focus on interdisciplinary topics such as stochastic models and algorithms, biological system modeling and analysis, complex network inference, and critical phenomenon analysis.",
@@ -107,7 +106,7 @@ const speakers = [
   },
   {
     name: 'Rafał Ryguła',
-    image: '/RafałRyguła .jpg',
+    image: `${baseUrl}RafałRyguła .jpg`,
     institutions:
       [
         'Head of the Affective Cognitive Neuroscience Laboratory',
@@ -121,7 +120,7 @@ const speakers = [
   },
   {
     name: 'Yang Yang',
-    image: '/YangYang.jpg',
+    image: `${baseUrl}YangYang.jpg`,
     institutions:
       [
         'School of Life Science and Technology, ShanghaiTech University',
@@ -135,7 +134,7 @@ const speakers = [
   },
   {
     name: 'Nashat Abumaria',
-    image: '/NashatAbumaria.jpg',
+    image: `${baseUrl}NashatAbumaria.jpg`,
     institutions: [
       'State Key Laboratory of Medical Neurobiology',
       'MOE Frontiers Center for Brain Science',
@@ -148,7 +147,7 @@ const speakers = [
   },
   {
     name: 'Misha Benjamin Ahrens',
-    image: '/MishaBenjaminAhrens.jpg',
+    image: `${baseUrl}MishaBenjaminAhrens.jpg`,
     institutions:
       [
         'Research group leader at Janelia Research Campus, HHMI'
@@ -161,7 +160,7 @@ const speakers = [
   },
   {
     name: 'Wenzhi Sun',
-    image: '/WenzhiSun.jpg',
+    image: `${baseUrl}WenzhiSun.jpg`,
     institutions:
       [
         'Chinese Institute for Brain Research, Beijing',
@@ -175,7 +174,7 @@ const speakers = [
   },
   {
     name: 'Jingfeng Zhou',
-    image: '/JingfengZhou.jpg',
+    image: `${baseUrl}JingfengZhou.jpg`,
     institutions:
       [
         'State Key Laboratory of Cognitive Neuroscience and Learning, Beijing Normal University & Chinese Institute for Brain Research, Beijing'],
@@ -187,7 +186,7 @@ const speakers = [
   },
   {
     name: 'Yu Gu',
-    image: '/YuGu.jpg',
+    image: `${baseUrl}YuGu.jpg`,
     institutions: [
       'State Key Laboratory of Medical Neurobiology',
       'MOE Frontiers Center for Brain Science',
@@ -200,7 +199,7 @@ const speakers = [
   },
   {
     name: 'Wei Lin',
-    image: '/WeiLin.jpg',
+    image: `${baseUrl}WeiLin.jpg`,
     institutions:
       [
 
@@ -217,7 +216,7 @@ const speakers = [
   },
   {
     name: 'Bin Min',
-    image: '/BinMin.jpg',
+    image: `${baseUrl}BinMin.jpg`,
     institutions:
       [
         'Lin Gang Laboratory'
@@ -229,7 +228,7 @@ const speakers = [
   },
   {
     name: 'Tifei Yuan',
-    image: '/TifeiYuan.jpg',
+    image: `${baseUrl}TifeiYuan.jpg`,
     institutions: ['School of Psychology, Shanghai Jiao Tong University'],
     bio: [
       "Dr. Tifei Yuan, a Distinguished Professor at Shanghai Jiao Tong University, is the Executive Dean of its School of Psychology and the Shanghai Mental Health Center's Brain Health Institute. He's a recipient of the National Natural Science Foundation of China's Distinguished and Excellent Young Scholar titles. An active figure in academic circles, he's on the editorial boards of multiple scientific journals. Focusing on neural mechanisms and interventions for psychiatric disorders like addiction and depression, he's published in top journals such as Nature Neuroscience, Neuron, Molecular Psychiatry, and Biological Psychiatry."
@@ -238,7 +237,7 @@ const speakers = [
   },
   {
     name: 'Fei Li',
-    image: '/FeiLi.jpg',
+    image: `${baseUrl}FeiLi.jpg`,
     institutions:
       [
         'Department of Developmental and Behavioural Paediatric & Child Primary Care',
@@ -252,8 +251,8 @@ const speakers = [
     talkTitle: 'Autism Etiology, Early Diagnosis, and Comprehensive Intervention: Translational Research from Bench to Bedside'
   },
   {
-    name: 'Tingyong Feng',
-    image: '/TingyongFeng.jpg',
+    name: `Tingyong Feng`,
+    image: '${baseUrl}TingyongFeng.jpg',
     institutions:
       [
         'Faculty of Psychology, Southwest University',
@@ -266,8 +265,8 @@ const speakers = [
     talkTitle: 'Neural basis and neuromodulation on procrastination'
   },
   {
-    name: 'Huiguang He',
-    image: '/HuiguangHe.jpg',
+    name: `Huiguang He`,
+    image: '${baseUrl}HuiguangHe.jpg',
     institutions:
       [
         'State Key Laboratory of Brain Cognition and Brain-inspired Intelligence Technology',
@@ -280,8 +279,8 @@ const speakers = [
     talkTitle: 'Fine-grained Emotion Neural Encoding and Decoding'
   },
   {
-    name: 'Haiyan Wu',
-    image: '/HaiyanWu.jpg',
+    name: `Haiyan Wu`,
+    image: '${baseUrl}HaiyanWu.jpg',
     institutions:
       [
         'Affective, Neuroscience, and Decision-making Lab (ANDlab)',
