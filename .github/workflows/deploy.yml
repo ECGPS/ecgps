@@ -43,10 +43,9 @@ jobs:
 
       # 修改版本
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3 # 降级到 v2
+        uses: actions/upload-pages-artifact@v2 # 降级到 v2
         with:
           path: './dist'
-
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v3 # 降级到 v2
+        uses: actions/deploy-pages@v2 # 降级到 v2
