@@ -8,7 +8,6 @@
           <img :src="organizer.image" :alt="organizer.name" class="organizer-image" />
         </div>
         <h3 class="organizer-name">{{ organizer.name }}</h3>
-        <!-- 移除 title 显示 -->
       </div>
     </div>
   </div>
@@ -18,28 +17,29 @@
 import { useRouter } from 'vue-router';
 
 const router = useRouter();
+const baseUrl = import.meta.env.BASE_URL;
 
 // 只展示5位组织者 - 确保名称与 speakers 中的完全匹配
 const organizers = [
   {
-    name: 'Yue Li', // 确保名称与SpeakersView.vue中的名称完全匹配
-    image: '/yueli.jpg',
+    name: 'Yue Li',
+    image: `${baseUrl}yueli.jpg`, // 使用模板字符串添加基础路径
   },
   {
-    name: 'Jifan Shi', // 修正前面的空格
-    image: '/JifanShi.png',
+    name: 'Jifan Shi',
+    image: `${baseUrl}JifanShi.png`,
   },
   {
-    name: 'Yu Gu', // 修正前面的空格
-    image: '/YuGu.jpg',
+    name: 'Yu Gu',
+    image: `${baseUrl}YuGu.jpg`,
   },
   {
     name: 'Tifei Yuan',
-    image: '/TifeiYuan.jpg',
+    image: `${baseUrl}TifeiYuan.jpg`,
   },
   {
     name: 'Nashat Abumaria',
-    image: '/NashatAbumaria.jpg',
+    image: `${baseUrl}NashatAbumaria.jpg`,
   }
 ];
 
