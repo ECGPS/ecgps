@@ -74,7 +74,7 @@ const agenda = [
           {
             name: "Amy Arnsten",
             affiliation: "Academy member, Goldman-Rakic Prize Recipient, School of Medicine, Yale University",
-            image: "/images/speakers/robert-williams.jpg"
+            image: ""
           }
         ],
       },
@@ -86,7 +86,7 @@ const agenda = [
           {
             name: "Haruhiko Bito",
             affiliation: "Professor and Chair, Department of Neurochemistry, division of Neuroscience, Tokyo University",
-            image: "/images/speakers/robert-williams.jpg"
+            image: ""
           }
         ],
       },
@@ -103,7 +103,7 @@ const agenda = [
           {
             name: "Yue Li",
             affiliation: "State Key Laboratory of Medical Neurobiology, MOE Frontiers Center for Brain Science, Institutes of Brain Science, Fudan University",
-            image: "/images/speakers/robert-williams.jpg"
+            image: ""
           }
         ],
       },
@@ -115,7 +115,7 @@ const agenda = [
           {
             name: "Rafal Rygula",
             affiliation: "Maj Institute of Pharmacology Polish Academy of Sciences",
-            image: "/images/speakers/robert-williams.jpg"
+            image: ""
           }
         ],
       },
@@ -127,7 +127,7 @@ const agenda = [
           {
             name: "Yang Yang",
             affiliation: "School of Life Science and Technology, ShanghaiTech University, State Key Laboratory of Advanced Medical Materials and Devices",
-            image: "/images/speakers/robert-williams.jpg"
+            image: ""
           }
         ],
       },
@@ -139,7 +139,7 @@ const agenda = [
           {
             name: "Nashat Abumaria",
             affiliation: "State Key Laboratory of Medical Neurobiology, MOE Frontiers Center for Brain Science, Institutes of Brain Science, Fudan University",
-            image: "/images/speakers/robert-williams.jpg"
+            image: ""
           }
         ],
       },
@@ -161,7 +161,7 @@ const agenda = [
           {
             name: "Misha Ahrens",
             affiliation: "Howard Hughes Medical Institute, Janelia Research Campus",
-            image: "/images/speakers/robert-williams.jpg"
+            image: ""
           }
         ],
       },
@@ -173,7 +173,7 @@ const agenda = [
           {
             name: "Wenzhi Sun",
             affiliation: "Chinese Institute for Brain Research, College of Basic Sciences, Capital Medical University",
-            image: "/images/speakers/robert-williams.jpg"
+            image: ""
           }
         ],
       },
@@ -185,7 +185,7 @@ const agenda = [
           {
             name: "Jingfeng Zhou",
             affiliation: "State Key Laboratory of Cognitive Neuroscience and Learning, Beijing Normal University & Chinese Institute for Brain Research, Beijing",
-            image: "/images/speakers/robert-williams.jpg"
+            image: ""
           }
         ],
       },
@@ -197,7 +197,7 @@ const agenda = [
           {
             name: "Yu Gu",
             affiliation: "State Key Laboratory of Medical Neurobiology, MOE Frontiers Center for Brain Science, Institutes of Brain Science, Fudan University",
-            image: "/images/speakers/robert-williams.jpg"
+            image: ""
           }
         ],
       },
@@ -209,7 +209,7 @@ const agenda = [
           {
             name: "Wei Lin",
             affiliation: "School of Mathematical Sciences, Research Institute of Intelligent Complex Systems (IICS), Centre for Computational Systems Biology, Fudan University",
-            image: "/images/speakers/robert-williams.jpg"
+            image: ""
           }
         ],
       },
@@ -221,7 +221,7 @@ const agenda = [
           {
             name: "Bin Min",
             affiliation: "Lin Gang Laboratory",
-            image: "/images/speakers/robert-williams.jpg"
+            image: ""
           }
         ],
       },
@@ -238,7 +238,7 @@ const agenda = [
           {
             name: "Tifei Yuan",
             affiliation: "Distinguished professor and executive dean of the School of Psychology, Shanghai Jiao Tong University",
-            image: "/images/speakers/robert-williams.jpg"
+            image: ""
           }
         ],
       },
@@ -250,7 +250,7 @@ const agenda = [
           {
             name: "Fei Li",
             affiliation: "Department of Developmental and Behavioural Paediatric & Child Primary Care, Shanghai Key Laboratory of Children’s Environmental Health, Xinhua Hospital, Shanghai Jiao Tong University",
-            image: "/images/speakers/robert-williams.jpg"
+            image: ""
           }
         ],
       },
@@ -262,7 +262,7 @@ const agenda = [
           {
             name: "Tingyong Feng",
             affiliation: "Department of Psychology Xi Nan University",
-            image: "/images/speakers/robert-williams.jpg"
+            image: ""
           }
         ],
       },
@@ -274,7 +274,7 @@ const agenda = [
           {
             name: "Huiguang He",
             affiliation: "State Key Laboratory of Brain Cognition and Brain-inspired Intelligence Technology, Institute of Automation, Chinese Academy of Sciences",
-            image: "/images/speakers/robert-williams.jpg"
+            image: ""
           }
         ],
       },
@@ -286,7 +286,7 @@ const agenda = [
           {
             name: "Haiyan Wu",
             affiliation: "Affective, Neuroscience, and Decision-making Lab, Center for Cognitive and Brain Sciences, Institute of Collaborative Innovation, University of Macau",
-            image: "/images/speakers/robert-williams.jpg"
+            image: ""
           }
         ],
       },
