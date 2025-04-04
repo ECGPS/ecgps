@@ -67,6 +67,7 @@ const goToSpeakerDetail = (organizer: { name: string }) => {
 }
 
 .section-title {
+  padding-top: 40px;
   text-align: center;
   margin-bottom: 2rem;
   font-size: 2rem;
