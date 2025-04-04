@@ -5,7 +5,7 @@ import { defineConfig } from 'vite'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [vue()],
-  base: process.env.NODE_ENV === 'production' ? '/ecgps/' : '/', // 设置基础路径为仓库名
+  base: '/ecgps/', // 设置基础路径为仓库名
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
