@@ -252,7 +252,7 @@ const speakers = [
   },
   {
     name: `Tingyong Feng`,
-    image: '${baseUrl}TingyongFeng.jpg',
+    image: `${baseUrl}TingyongFeng.jpg`,
     institutions:
       [
         'Faculty of Psychology, Southwest University',
@@ -266,7 +266,7 @@ const speakers = [
   },
   {
     name: `Huiguang He`,
-    image: '${baseUrl}HuiguangHe.jpg',
+    image: `${baseUrl}HuiguangHe.jpg`,
     institutions:
       [
         'State Key Laboratory of Brain Cognition and Brain-inspired Intelligence Technology',
@@ -280,7 +280,7 @@ const speakers = [
   },
   {
     name: `Haiyan Wu`,
-    image: '${baseUrl}HaiyanWu.jpg',
+    image: `${baseUrl}HaiyanWu.jpg`,
     institutions:
       [
         'Affective, Neuroscience, and Decision-making Lab (ANDlab)',
