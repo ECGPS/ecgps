@@ -343,6 +343,8 @@ const activeDay = computed(() => agenda[activeTabIndex.value]);
   transition: all 0.3s ease;
 }
 
+
+
 .tab-btn:hover {
   color: #2c3e50;
 }
