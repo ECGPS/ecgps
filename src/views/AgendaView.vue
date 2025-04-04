@@ -27,7 +27,7 @@
 
               <div class="session-speakers" v-if="session.speakers && session.speakers.length">
                 <div v-for="(speaker, idx) in session.speakers" :key="idx" class="speaker">
-                  <img v-if="speaker.image" :src="speaker.image" :alt="speaker.name" class="speaker-image">
+                  <!-- <img v-if="speaker.image" :src="speaker.image" :alt="speaker.name" class="speaker-image"> -->
                   <div class="speaker-info">
                     <div class="speaker-name">{{ speaker.name }}</div>
                     <div class="speaker-affiliation">{{ speaker.affiliation }}</div>
