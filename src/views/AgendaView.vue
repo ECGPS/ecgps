@@ -18,19 +18,21 @@
             :class="['timeline-item', { 'break-item': session.type === 'break' }]">
             <div class="timeline-time">
               <span class="time">{{ session.time }}</span>
-              <div class="timeline-line"></div>
             </div>
 
-            <div class="timeline-content">
+            <div class="timeline-content" :class="getSessionClass(session.type)">
               <div class="session-type" v-if="session.type">{{ session.type }}</div>
               <h3 class="session-title">{{ session.title }}</h3>
 
               <div class="session-speakers" v-if="session.speakers && session.speakers.length">
                 <div v-for="(speaker, idx) in session.speakers" :key="idx" class="speaker">
-                  <!-- <img v-if="speaker.image" :src="speaker.image" :alt="speaker.name" class="speaker-image"> -->
+                  <img v-if="speaker.image" :src="speaker.image" :alt="speaker.name" class="speaker-image">
                   <div class="speaker-info">
-                    <div class="speaker-name">{{ speaker.name }}</div>
-                    <div class="speaker-affiliation">{{ speaker.affiliation }}</div>
+                    <!-- 添加点击事件，导航到对应的演讲者详情 -->
+                    <div class="speaker-name" @click="navigateToSpeaker(speaker.name)" :class="{ clickable: true }">
+                      {{ speaker.name }}
+                    </div>
+                    <!-- 移除了所属机构显示 -->
                   </div>
                 </div>
               </div>
@@ -40,18 +42,25 @@
       </div>
     </div>
 
-    <!--     <div class="agenda-download">
-      <a href="/files/complete-agenda.pdf" download class="download-btn">
+    <!-- 添加下载日程表按钮 -->
+    <div class="agenda-download">
+      <a :href="`${baseUrl}files/ECGPS-schedule.pdf`" download class="download-btn">
+        <span class="download-icon"></span>
         <span>Download Full Schedule</span>
       </a>
-    </div> -->
+    </div>
   </div>
 </template>
 
 <script setup lang="ts">
 import { ref, computed } from 'vue';
+import { useRouter } from 'vue-router';
 
+const router = useRouter();
+const baseUrl = import.meta.env.BASE_URL;
 const activeTabIndex = ref(0);
+
+
 
 const agenda = [
   {
@@ -59,11 +68,12 @@ const agenda = [
     sessions: [
       {
         time: "8:00 - 8:30",
-        type: "registration",
+        type: "opening",
         title: "Gathering and Welcoming",
       },
       {
         time: "8:30 - 8:40",
+        type: "opening",
         title: "Opening",
       },
       {
@@ -74,7 +84,7 @@ const agenda = [
           {
             name: "Amy Arnsten",
             affiliation: "Academy member, Goldman-Rakic Prize Recipient, School of Medicine, Yale University",
-            image: ""
+            image: `${baseUrl}agenda/AmyArnsten.png`
           }
         ],
       },
@@ -86,7 +96,7 @@ const agenda = [
           {
             name: "Haruhiko Bito",
             affiliation: "Professor and Chair, Department of Neurochemistry, division of Neuroscience, Tokyo University",
-            image: ""
+            image: `${baseUrl}agenda/HaruhikoBito.png`
           }
         ],
       },
@@ -103,7 +113,7 @@ const agenda = [
           {
             name: "Yue Li",
             affiliation: "State Key Laboratory of Medical Neurobiology, MOE Frontiers Center for Brain Science, Institutes of Brain Science, Fudan University",
-            image: ""
+            image: `${baseUrl}agenda/YueLi.png`
           }
         ],
       },
@@ -113,9 +123,9 @@ const agenda = [
         title: "Modeling Reinforcement-Based Cognitive Biases in Animal Models of Mental Disorders and Addictions",
         speakers: [
           {
-            name: "Rafal Rygula",
+            name: "Rafał Ryguła",
             affiliation: "Maj Institute of Pharmacology Polish Academy of Sciences",
-            image: ""
+            image: `${baseUrl}agenda/RafałRyguła .png`
           }
         ],
       },
@@ -127,7 +137,7 @@ const agenda = [
           {
             name: "Yang Yang",
             affiliation: "School of Life Science and Technology, ShanghaiTech University, State Key Laboratory of Advanced Medical Materials and Devices",
-            image: ""
+            image: `${baseUrl}agenda/YangYang.png`
           }
         ],
       },
@@ -139,13 +149,13 @@ const agenda = [
           {
             name: "Nashat Abumaria",
             affiliation: "State Key Laboratory of Medical Neurobiology, MOE Frontiers Center for Brain Science, Institutes of Brain Science, Fudan University",
-            image: ""
+            image: `${baseUrl}agenda/NashatAbumaria.png`
           }
         ],
       },
       {
         time: "11:35 - 13:00",
-        type: "dinner",
+        type: "meal",
         title: "Lunch break",
       },
     ]
@@ -159,9 +169,9 @@ const agenda = [
         title: "Hole-brain and whole-body computations for behavior and physiology",
         speakers: [
           {
-            name: "Misha Ahrens",
+            name: "Misha Benjamin Ahrens",
             affiliation: "Howard Hughes Medical Institute, Janelia Research Campus",
-            image: ""
+            image: `${baseUrl}agenda/MishaBenjaminAhrens.png`
           }
         ],
       },
@@ -173,7 +183,7 @@ const agenda = [
           {
             name: "Wenzhi Sun",
             affiliation: "Chinese Institute for Brain Research, College of Basic Sciences, Capital Medical University",
-            image: ""
+            image: `${baseUrl}agenda/WenzhiSun.png`
           }
         ],
       },
@@ -185,7 +195,7 @@ const agenda = [
           {
             name: "Jingfeng Zhou",
             affiliation: "State Key Laboratory of Cognitive Neuroscience and Learning, Beijing Normal University & Chinese Institute for Brain Research, Beijing",
-            image: ""
+            image: `${baseUrl}agenda/JingfengZhou.png`
           }
         ],
       },
@@ -197,7 +207,7 @@ const agenda = [
           {
             name: "Yu Gu",
             affiliation: "State Key Laboratory of Medical Neurobiology, MOE Frontiers Center for Brain Science, Institutes of Brain Science, Fudan University",
-            image: ""
+            image: `${baseUrl}agenda/YuGu.png`
           }
         ],
       },
@@ -209,7 +219,7 @@ const agenda = [
           {
             name: "Wei Lin",
             affiliation: "School of Mathematical Sciences, Research Institute of Intelligent Complex Systems (IICS), Centre for Computational Systems Biology, Fudan University",
-            image: ""
+            image: `${baseUrl}agenda/WeiLin.png`
           }
         ],
       },
@@ -221,7 +231,7 @@ const agenda = [
           {
             name: "Bin Min",
             affiliation: "Lin Gang Laboratory",
-            image: ""
+            image: `${baseUrl}agenda/BinMin.png`
           }
         ],
       },
@@ -238,7 +248,7 @@ const agenda = [
           {
             name: "Tifei Yuan",
             affiliation: "Distinguished professor and executive dean of the School of Psychology, Shanghai Jiao Tong University",
-            image: ""
+            image: `${baseUrl}agenda/TifeiYuan.png`
           }
         ],
       },
@@ -250,7 +260,7 @@ const agenda = [
           {
             name: "Fei Li",
             affiliation: "Department of Developmental and Behavioural Paediatric & Child Primary Care, Shanghai Key Laboratory of Children’s Environmental Health, Xinhua Hospital, Shanghai Jiao Tong University",
-            image: ""
+            image: `${baseUrl}agenda/FeiLi.png`
           }
         ],
       },
@@ -262,7 +272,7 @@ const agenda = [
           {
             name: "Tingyong Feng",
             affiliation: "Department of Psychology Xi Nan University",
-            image: ""
+            image: `${baseUrl}agenda/TingyongFeng.png`
           }
         ],
       },
@@ -274,7 +284,7 @@ const agenda = [
           {
             name: "Huiguang He",
             affiliation: "State Key Laboratory of Brain Cognition and Brain-inspired Intelligence Technology, Institute of Automation, Chinese Academy of Sciences",
-            image: ""
+            image: `${baseUrl}agenda/HuiguangHe.png`
           }
         ],
       },
@@ -286,18 +296,30 @@ const agenda = [
           {
             name: "Haiyan Wu",
             affiliation: "Affective, Neuroscience, and Decision-making Lab, Center for Cognitive and Brain Sciences, Institute of Collaborative Innovation, University of Macau",
-            image: ""
+            image: `${baseUrl}agenda/HaiyanWu.png`
           }
         ],
       },
       {
         time: "18:00 - ",
-        type: "dinner",
+        type: "meal",
         title: "Dinner",
       },
     ]
   }
 ];
+
+const getSessionClass = (type: string | undefined) => {
+  if (!type) return '';
+  return `session-${type.toLowerCase()}`;
+};
+
+const navigateToSpeaker = (speakerName: string) => {
+  router.push({
+    name: 'Speakers',
+    query: { speaker: speakerName }
+  });
+};
 
 const activeDay = computed(() => agenda[activeTabIndex.value]);
 </script>
@@ -403,18 +425,7 @@ const activeDay = computed(() => agenda[activeTabIndex.value]);
   white-space: nowrap;
 }
 
-.timeline-line {
-  position: absolute;
-  top: 24px;
-  right: 0;
-  bottom: -2rem;
-  width: 2px;
-  background-color: #e0e0e0;
-}
 
-.timeline-item:last-child .timeline-line {
-  display: none;
-}
 
 .timeline-content {
   flex: 1;
@@ -441,26 +452,47 @@ const activeDay = computed(() => agenda[activeTabIndex.value]);
   text-transform: uppercase;
   letter-spacing: 0.5px;
   margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+/* 为各类型标签设置不同的背景色和文字色 */
+.session-keynote .session-type {
+  background-color: #d0dae6;
+  /* 淡蓝色背景 */
+  color: #1e4b75;
+  /* 深蓝色文字 */
+}
+
+.session-opening .session-type {
+  background-color: #ede2f5;
+  /* 淡紫色背景 */
+  color: #9b59b6;
+  /* 紫色文字 */
+}
+
+.session-registration .session-type {
+  background-color: #dce8e0;
+  /* 淡绿色背景 */
+  color: #2d6d4b;
+  /* 深绿色文字 */
+}
+
+.session-break .session-type {
+  background-color: #e9ecef;
+  /* 浅灰色背景 */
+  color: #7f8c8d;
+  /* 灰色文字 */
+}
+
+.session-meal .session-type {
+  background-color: #fae5d3;
+  /* 淡橙色背景 */
+  color: #d35400;
+  /* 橙色文字 */
 }
 
 .break-item .session-type {
   background-color: #dee2e6;
-}
-
-.timeline-content[data-type="keynote"] {
-  border-left-color: #007bff;
-}
-
-.timeline-content[data-type="panel"] {
-  border-left-color: #28a745;
-}
-
-.timeline-content[data-type="workshop"] {
-  border-left-color: #fd7e14;
-}
-
-.timeline-content[data-type="social"] {
-  border-left-color: #6f42c1;
 }
 
 .session-title {
@@ -476,6 +508,29 @@ const activeDay = computed(() => agenda[activeTabIndex.value]);
   margin-bottom: 1rem;
 }
 
+.session-keynote {
+  border-left-color: #1e4b75;
+  /* 深蓝色 */
+}
+
+
+.session-opening {
+  border-left-color: #9b59b6;
+  /* 紫色 */
+}
+
+
+.session-break {
+  border-left-color: #7f8c8d;
+  /* 灰色 */
+  background-color: #f8f9fa;
+}
+
+.session-meal {
+  border-left-color: #d35400;
+  /* 橙色 */
+}
+
 .speaker {
   display: flex;
   align-items: center;
@@ -489,9 +544,41 @@ const activeDay = computed(() => agenda[activeTabIndex.value]);
   margin-right: 0.75rem;
 }
 
+/* 让演讲者名称更突出 */
 .speaker-name {
-  font-weight: 500;
-  color: #212529;
+  font-weight: 600;
+  color: #2c3e50;
+  font-size: 1rem;
+}
+
+.speaker-name.clickable {
+  cursor: pointer;
+  color: #3498db;
+  transition: color 0.2s ease;
+  display: inline-block;
+  position: relative;
+}
+
+.speaker-name.clickable:hover {
+  color: #2980b9;
+}
+
+.speaker-name.clickable::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: currentColor;
+  transform: scaleX(0);
+  transition: transform 0.2s ease;
+  transform-origin: right;
+}
+
+.speaker-name.clickable:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
 .speaker-affiliation {
@@ -510,25 +597,35 @@ const activeDay = computed(() => agenda[activeTabIndex.value]);
   display: flex;
   justify-content: center;
   margin-top: 3rem;
+  margin-bottom: 2rem;
 }
 
 .download-btn {
   display: inline-flex;
   align-items: center;
   padding: 0.75rem 1.5rem;
-  background-color: #2c3e50;
+  background-color: #3498db;
   color: white;
   border-radius: 30px;
   text-decoration: none;
   font-weight: 500;
   transition: all 0.3s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  gap: 0.5rem;
 }
 
 .download-btn:hover {
-  background-color: #1e2b37;
+  background-color: #2980b9;
   transform: translateY(-2px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
+
+.download-icon::before {
+  content: "📄";
+  font-size: 1.2rem;
+}
+
+
 
 @media (max-width: 768px) {
   .agenda-tabs {
@@ -552,9 +649,6 @@ const activeDay = computed(() => agenda[activeTabIndex.value]);
     padding-bottom: 0.5rem;
   }
 
-  .timeline-line {
-    display: none;
-  }
 
   .session-speakers {
     flex-direction: column;

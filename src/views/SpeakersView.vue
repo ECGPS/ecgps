@@ -53,27 +53,26 @@ const baseUrl = import.meta.env.BASE_URL;
 const speakers = [
   {
     name: 'Amy Arnsten',
-    image: `${baseUrl}AmyArnsten.jpg`,
+    image: `${baseUrl}speaker/AmyArnsten.jpg`,
     institutions:
       [
-        'Albert E. Kent Professor of Neuroscience and Professor of Psychology',
         'Yale School of Medicine',
-        'Member of Kavli Institute of Neuroscience at Yale University'
+        'Kavli Institute of Neuroscience, Yale University'
       ],
     bio:
       [
-        'Arnsten received her BA in Neuroscience with Honors from Brown University in 1976 and her PhD in Neuroscience from UCSD in 1981, with postdocs at Cambridge with Susan Iversen and then Yale with Patricia Goldman-Rakic. She became Assistant Professor at Yale in 1986 and is currently the Albert E. Kent Professor of Neuroscience. She is a member of the National Academy of Medicine and received the Goldman-Rakic Prize for Outstanding Research in Cognitive Neuroscience. Arnsten’s research has led to the development of guanfacine (Intuniv™) for the treatment of ADHD and other prefrontal disorders, including recent studies treating the cognitive deficits of long-COVID and delirium and prazosin for the treatment of post-traumatic stress disorder.'
+        'Arnsten received her BA in Neuroscience with Honors from Brown University in 1976 and her PhD in Neuroscience from UCSD in 1981, with postdocs at Cambridge with Susan Iversen and then Yale with Patricia Goldman-Rakic. She became Assistant Professor at Yale in 1986 and is currently the Albert E. Kent Professor of Neuroscience. She is a member of the National Academy of Medicine and received the Goldman-Rakic Prize for Outstanding Research in Cognitive Neuroscience. Arnsten\'s research has led to the development of guanfacine (Intuniv™) for the treatment of ADHD and other prefrontal disorders, including recent studies treating the cognitive deficits of long-COVID and delirium and prazosin for the treatment of post-traumatic stress disorder.'
       ],
     talkTitle: 'Stress and fatigue impair prefrontal cortical function needed for perseverance and higher cognition'
   },
   {
     name: 'Haruhiko Bito',
-    image: `${baseUrl}HaruhikoBito.jpg`,
+    image: `${baseUrl}speaker/HaruhikoBito.jpg`,
     institutions:
       [
-        'Professor and Chair, Department of Neurochemistry',
-        'Chair, Division of Neuroscience',
-        'Director, Center for Disease Biology and Integrative Medicine',
+        'Department of Neurochemistry',
+        'Division of Neuroscience',
+        'Center for Disease Biology and Integrative Medicine',
         'Graduate School of Medicine, The University of Tokyo'
       ],
     bio:
@@ -85,7 +84,7 @@ const speakers = [
 
   {
     name: 'Yue Li',
-    image: `${baseUrl}yueli.jpg`,
+    image: `${baseUrl}speaker/YueLi.jpg`,
     institutions: [
       'State Key Laboratory of Medical Neurobiology',
       'MOE Frontiers Center for Brain Science',
@@ -94,33 +93,33 @@ const speakers = [
     bio: [
       'Li Yue, graduated with a PhD from the School of Basic Medicine at Zhejiang University in 2017, and conducted postdoctoral research at the Medical School of the University of Geneva in Switzerland from 2018 to 2022. Mainly engaged in research on drug addiction and synaptic plasticity, with the main results published as the first author in Science, Renowned journals such as Nature and Neuron. Joined the Institute of Neuroscience Center for Frontiers in Neuroscience at Fudan University as the project leader in December 2022. Selected for the National and Shanghai High level Youth Talent Program.',
     ],
-    talkTitle: 'he Modulation of Persevering Drug Administration by Serotonin'
+    talkTitle: 'The Modulation of Persevering Drug Administration by Serotonin'
   },
   {
     name: 'Jifan Shi',
-    image: `${baseUrl}JifanShi.png`,
-    institutions: ['Research Institute of Intelligent Complex Systems,Fudan University'],
+    image: `${baseUrl}speaker/JifanShi.jpg`,
+    institutions: ['Research Institute of Intelligent Complex Systems, Fudan University'],
     bio: [
       "Ji-Fan Shi is a Junior Associate Researcher at the Research Institute of Intelligent Complex Systems. He obtained both his Bachelor's and Ph.D. degrees in Computational Mathematics from the School of Mathematical Sciences at Peking University. Prior to joining Fudan University in May 2022, he held positions at the Institute of Industrial Science and the International Research Center for Neurointelligence at the University of Tokyo. In May 2021, he was selected for the Shanghai Leading (Overseas) Young Talent Program, and in 2023, he was included in the National Young Talent Program. His primary research interests lie in computational biology and the mathematical theory of complex life systems, with a focus on interdisciplinary topics such as stochastic models and algorithms, biological system modeling and analysis, complex network inference, and critical phenomenon analysis.",
     ],
   },
   {
     name: 'Rafał Ryguła',
-    image: `${baseUrl}RafałRyguła .jpg`,
+    image: `${baseUrl}speaker/RafałRyguła.jpg`,
     institutions:
       [
-        'Head of the Affective Cognitive Neuroscience Laboratory',
+        'the Affective Cognitive Neuroscience Laboratory',
         'Maj Institute of Pharmacology Polish Academy of Sciences'
       ],
     bio:
       [
-        'A graduate of the Faculty of Biology and Earth Sciences at Jagiellonian University. In 2006 he defended his doctoral thesis at the University of Göttingen in Germany. From 2008 to 2011, he conducted research at the Department of Experimental Psychology at the University of Cambridge, UK. Since 2011, he has been associated with the Jerzy Maj Institute of Pharmacology of the Polish Academy of Sciences, where he leads the Affective Cognitive Neuroscience Laboratory. His scientific interests include the interactions between emotions and cognition, the cognitive mechanisms of mental disorders, addictions, and, more recently, susceptibility to (dis)information.'
+        'A graduate of the Faculty of Biology and Earth Sciences at Jagiellonian University. In 2006, he defended his doctoral thesis at the University of Göttingen in Germany. From 2008 to 2011, he conducted research at the Department of Experimental Psychology at the University of Cambridge, UK. Since 2011, he has been associated with the Jerzy Maj Institute of Pharmacology of the Polish Academy of Sciences, where he leads the Affective Cognitive Neuroscience Laboratory. His scientific interests include the interactions between emotions and cognition, the cognitive mechanisms of mental disorders, addictions, and, more recently, susceptibility to (dis)information.'
       ],
-    talkTitle: 'Modeling Reinforcement-Based Cognitive Biases in Animal Models of Mental Disorders and Addictions.'
+    talkTitle: 'Modeling Reinforcement-Based Cognitive Biases in Animal Models of Mental Disorders and Addictions'
   },
   {
     name: 'Yang Yang',
-    image: `${baseUrl}YangYang.jpg`,
+    image: `${baseUrl}speaker/YangYang.jpg`,
     institutions:
       [
         'School of Life Science and Technology, ShanghaiTech University',
@@ -128,13 +127,13 @@ const speakers = [
       ],
     bio:
       [
-        "Dr. Yang Yang, graduated with a bachelor's degree in Biomedical Engineering from Zhejiang University, and a Ph.D.degree in Neuroscience from Stony Brook University.She joined the School of Life Sciences at ShanghaiTech University in 2017. Her laboratory uses cutting - edge techniques including in vivo two - photon imaging, in vivo multi - channel electrophysiology and optogenetics in behaving animals, to investigate neural circuits and synaptic plasticity mechanisms underlying cognitive behaviors such as decision making and learning.She has published a series of papers in Nature Neuroscience, Journal of Neuroscience, National Science Review, and Cell Reports.She receives funding from the National Natural Science Foundation of China, the National Key R & D Program of the Ministry of Science and Technology, and \"Science and Technology Innovation 2030\" of the Ministry of Science and Technology of China."
+        "Dr. Yang Yang, graduated with a bachelor's degree in Biomedical Engineering from Zhejiang University, and a Ph.D.degree in Neuroscience from Stony Brook University.She joined the School of Life Sciences at ShanghaiTech University in 2017. Her laboratory uses cutting - edge techniques including in vivo two - photon imaging, in vivo multi - channel electrophysiology and optogenetics in behaving animals, to investigate neural circuits and synaptic plasticity mechanisms underlying cognitive behaviors such as decision-making and learning.She has published a series of papers in Nature Neuroscience, Journal of Neuroscience, National Science Review, and Cell Reports.She receives funding from the National Natural Science Foundation of China, the National Key R & D Program of the Ministry of Science and Technology, and \"Science and Technology Innovation 2030\" of the Ministry of Science and Technology of China."
       ],
     talkTitle: 'Posterior parietal cortex mediates rarity-induced decision bias and learning under uncertainty'
   },
   {
     name: 'Nashat Abumaria',
-    image: `${baseUrl}NashatAbumaria.jpg`,
+    image: `${baseUrl}speaker/NashatAbumaria.jpg`,
     institutions: [
       'State Key Laboratory of Medical Neurobiology',
       'MOE Frontiers Center for Brain Science',
@@ -147,20 +146,20 @@ const speakers = [
   },
   {
     name: 'Misha Benjamin Ahrens',
-    image: `${baseUrl}MishaBenjaminAhrens.jpg`,
+    image: `${baseUrl}speaker/MishaBenjaminAhrens.jpg`,
     institutions:
       [
-        'Research group leader at Janelia Research Campus, HHMI'
+        'Janelia Research Campus, The Howard Hughes Medical Institute'
       ],
     bio:
       [
         "Misha Ahrens studied mathematics and physics at Cambridge University and did his PhD in computational neuroscience at the Gatsby Unit, UCL. He then moved to Harvard University to do a postdoc with Florian Engert in experimental neuroscience, after which he became a Group Leader at HHMI Janelia Research Campus in 2012. He is now a Senior Group Leader at Janelia focusing on systems neuroscience, brain-body interactions, and neurotechnology."
       ],
-    talkTitle: 'hole-brain and whole-body computations for behavior and physiology'
+    talkTitle: 'Hole-brain and whole-body computations for behavior and physiology'
   },
   {
     name: 'Wenzhi Sun',
-    image: `${baseUrl}WenzhiSun.jpg`,
+    image: `${baseUrl}speaker/WenzhiSun.jpg`,
     institutions:
       [
         'Chinese Institute for Brain Research, Beijing',
@@ -174,7 +173,7 @@ const speakers = [
   },
   {
     name: 'Jingfeng Zhou',
-    image: `${baseUrl}JingfengZhou.jpg`,
+    image: `${baseUrl}speaker/JingfengZhou.jpg`,
     institutions:
       [
         'State Key Laboratory of Cognitive Neuroscience and Learning, Beijing Normal University & Chinese Institute for Brain Research, Beijing'],
@@ -186,7 +185,7 @@ const speakers = [
   },
   {
     name: 'Yu Gu',
-    image: `${baseUrl}YuGu.jpg`,
+    image: `${baseUrl}speaker/YuGu.jpg`,
     institutions: [
       'State Key Laboratory of Medical Neurobiology',
       'MOE Frontiers Center for Brain Science',
@@ -199,11 +198,11 @@ const speakers = [
   },
   {
     name: 'Wei Lin',
-    image: `${baseUrl}WeiLin.jpg`,
+    image: `${baseUrl}speaker/WeiLin.jpg`,
     institutions:
       [
 
-        'Research Institute of Intelligent Complex Systems (IICS)',
+        'Research Institute of Intelligent Complex Systems',
         'Centre for Computational Systems Biology',
         'School of Mathematical Sciences, Fudan University'
 
@@ -216,20 +215,21 @@ const speakers = [
   },
   {
     name: 'Bin Min',
-    image: `${baseUrl}BinMin.jpg`,
+    image: `${baseUrl}speaker/BinMin.jpg`,
     institutions:
       [
         'Lin Gang Laboratory'
       ],
     bio:
       [
-        "Bin Min is a Young Researcher at Lingang Laboratory, with a specialization in computational cognitive neuroscience. His research primarily focuses on the development of interpretable deep neural network models and innovative data analysis methods aimed at uncovering the neural computational principles underlying high-level cognitive functions, including memory, decision-making, and planning. Furthermore, he is dedicated to advancing and applying cutting-edge technologies, such as brain-inspired computing and brain-machine interface decoding algorithms. His work has been published in prominent journals, including Science, Neuron, and eLife, among others."],
+        "Bin Min is a Young Researcher at Lingang Laboratory, with a specialization in computational cognitive neuroscience. His research primarily focuses on the development of interpretable deep neural network models and innovative data analysis methods aimed at uncovering the neural computational principles underlying high-level cognitive functions, including memory, decision-making, and planning. Furthermore, he is dedicated to advancing and applying cutting-edge technologies, such as brain-inspired computing and brain-machine interface decoding algorithms. His work has been published in prominent journals, including Science, Neuron, and eLife, among others."
+      ],
     talkTitle: 'Modeling individual variability of neural computations underlying flexible decisions'
   },
   {
     name: 'Tifei Yuan',
-    image: `${baseUrl}TifeiYuan.jpg`,
-    institutions: ['School of Psychology, Shanghai Jiao Tong University'],
+    image: `${baseUrl}speaker/TifeiYuan.jpg`,
+    institutions: ['Shanghai Mental Health Center', 'School of Psychology, Shanghai Jiao Tong University'],
     bio: [
       "Dr. Tifei Yuan, a Distinguished Professor at Shanghai Jiao Tong University, is the Executive Dean of its School of Psychology and the Shanghai Mental Health Center's Brain Health Institute. He's a recipient of the National Natural Science Foundation of China's Distinguished and Excellent Young Scholar titles. An active figure in academic circles, he's on the editorial boards of multiple scientific journals. Focusing on neural mechanisms and interventions for psychiatric disorders like addiction and depression, he's published in top journals such as Nature Neuroscience, Neuron, Molecular Psychiatry, and Biological Psychiatry."
     ],
@@ -237,7 +237,7 @@ const speakers = [
   },
   {
     name: 'Fei Li',
-    image: `${baseUrl}FeiLi.jpg`,
+    image: `${baseUrl}speaker/FeiLi.jpg`,
     institutions:
       [
         'Department of Developmental and Behavioural Paediatric & Child Primary Care',
@@ -252,7 +252,7 @@ const speakers = [
   },
   {
     name: `Tingyong Feng`,
-    image: `${baseUrl}TingyongFeng.jpg`,
+    image: `${baseUrl}speaker/TingyongFeng.jpg`,
     institutions:
       [
         'Faculty of Psychology, Southwest University',
@@ -266,7 +266,7 @@ const speakers = [
   },
   {
     name: `Huiguang He`,
-    image: `${baseUrl}HuiguangHe.jpg`,
+    image: `${baseUrl}speaker/HuiguangHe.jpg`,
     institutions:
       [
         'State Key Laboratory of Brain Cognition and Brain-inspired Intelligence Technology',
@@ -280,7 +280,7 @@ const speakers = [
   },
   {
     name: `Haiyan Wu`,
-    image: `${baseUrl}HaiyanWu.jpg`,
+    image: `${baseUrl}speaker/HaiyanWu.jpg`,
     institutions:
       [
         'Affective, Neuroscience, and Decision-making Lab (ANDlab)',
@@ -289,9 +289,7 @@ const speakers = [
       ],
     bio:
       [
-
-        "Professor Haiyan Wu is the Principal Investigator of ANDlab at the University of Macau (https://andlab-um.com/) and a Visiting Associate at the California Institute of Technology. Before joining the University of Macau, Professor Wu obtained her Ph.D. from Beijing Normal University and served as a researcher at the Institute of Psychology, Chinese Academy of Sciences. Her research focuses on developing an interdisciplinary technological framework that integrates artificial intelligence, brain imaging, computational models, intracranial and extracranial neural signals, neural modulation, virtual reality, and big data to explore social neuroscience. Her work primarily centers on the interaction between emotion and decision-making in the brain. has more than 50 publications in neuroscience and psychology journals such as eLife, Neuroscience & Biobehavioral Reviews, Scientific Data, Neuroimage, Annals of the New York Academy of Sciences, Human Brain Mapping, and her publications have been cited over 2100 times. She is a member of the Young Editorial Board of Neuroscience Bulletin. In 2023, she was recognized as one of the \"Top 30 Young Innovators in Brain Science and Artificial Intelligence.\""
-
+        "Professor Haiyan Wu is the Principal Investigator of ANDlab at the University of Macau (https://andlab-um.com/) and a Visiting Associate at the California Institute of Technology. Before joining the University of Macau, Professor Wu obtained her Ph.D. from Beijing Normal University and served as a researcher at the Institute of Psychology, Chinese Academy of Sciences. Her research focuses on developing an interdisciplinary technological framework that integrates artificial intelligence, brain imaging, computational models, intracranial and extracranial neural signals, neural modulation, virtual reality, and big data to explore social neuroscience. Her work primarily centers on the interaction between emotion and decision-making in the brain. She has more than 50 publications in neuroscience and psychology journals such as eLife, Neuroscience & Biobehavioral Reviews, Scientific Data, Neuroimage, Annals of the New York Academy of Sciences, Human Brain Mapping, and her publications have been cited over 2100 times. She is a member of the Young Editorial Board of Neuroscience Bulletin. In 2023, she was recognized as one of the \"Top 30 Young Innovators in Brain Science and Artificial Intelligence.\""
       ],
     talkTitle: 'Unethical amnesia brain: Memory and metacognitive distortion induced by dishonesty'
   },

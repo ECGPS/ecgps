@@ -4,8 +4,7 @@
       <img class="bg" src="/bg.jpg" />
       <div class="bg-title-container">
         <div class="bg-title">THE FIRST SYMPOSIUM ON EMOTION AND COGNITION</div>
-        <div class="bg-title"> WITH FOCUS ON GIVE UP, PERSEVERANCE,
-          AND STRATEGIC BEHAVIOR IT</div>
+        <div class="bg-title"> WITH FOCUS ON GIVE UP, PERSEVERANCE, AND STRATEGIC BEHAVIOR IT</div>
       </div>
       <div class="bg-subtitle">
         April 10th, 2025
@@ -87,7 +86,6 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
   width: 80%;
   max-width: 1200px;
 }

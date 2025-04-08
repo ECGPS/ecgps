@@ -18,10 +18,10 @@
             :class="{ 'active': $route.name === 'Speakers' }">Speakers</router-link>
           <router-link :to="{ name: 'Agenda' }" class="navbar-item"
             :class="{ 'active': $route.name === 'Agenda' }">Agenda</router-link>
-          <!--           <router-link :to="{ name: 'Sponsors' }" class="navbar-item"
+          <router-link :to="{ name: 'Sponsors' }" class="navbar-item"
             :class="{ 'active': $route.name === 'Sponsors' }">Sponsors</router-link>
-          <router-link :to="{ name: 'FAQ' }" class="navbar-item"
-            :class="{ 'active': $route.name === 'FAQ' }">FAQ</router-link> -->
+          <router-link :to="{ name: 'AttendeeInfo' }" class="navbar-item"
+            :class="{ 'active': $route.name === 'AttendeeInfo' }">Attendee Info</router-link>
 
           <!-- 移动端菜单按钮 -->
           <button class="menu-toggle" @click="toggleMobileMenu">
@@ -42,10 +42,10 @@
           @click="closeMobileMenu">Speakers</router-link>
         <router-link :to="{ name: 'Agenda' }" class="mobile-item" :class="{ 'active': $route.name === 'Agenda' }"
           @click="closeMobileMenu">Agenda</router-link>
-        <!--  <router-link :to="{ name: 'Sponsors' }" class="mobile-item" :class="{ 'active': $route.name === 'Sponsors' }"
+        <router-link :to="{ name: 'Sponsors' }" class="mobile-item" :class="{ 'active': $route.name === 'Sponsors' }"
           @click="closeMobileMenu">Sponsors</router-link>
-        <router-link :to="{ name: 'FAQ' }" class="mobile-item" :class="{ 'active': $route.name === 'FAQ' }"
-          @click="closeMobileMenu">FAQ</router-link> -->
+        <router-link :to="{ name: 'AttendeeInfo' }" class="mobile-item"
+          :class="{ 'active': $route.name === 'AttendeeInfo' }" @click="closeMobileMenu">Attendee Info</router-link>
       </div>
     </nav>
     <div class="main-router-view-container">

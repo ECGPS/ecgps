@@ -1,5 +1,4 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import WelcomeView from '../views/WelcomeView.vue'
 import MainView from '@/views/MainView.vue'
 
 const router = createRouter({
@@ -7,11 +6,6 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      name: 'StartPage',
-      component: WelcomeView,
-    },
-    {
-      path: '/main',
       name: 'Main',
       component: MainView,
       redirect: { name: 'Home' },
@@ -42,9 +36,9 @@ const router = createRouter({
           component: () => import('../views/SponsorsView.vue'),
         },
         {
-          path: 'faq',
-          name: 'FAQ',
-          component: () => import('../views/FAQView.vue'),
+          path: '/info',
+          name: 'AttendeeInfo',
+          component: () => import('../views/AttendeeInfoView.vue')
         },
       ],
     },
