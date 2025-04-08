@@ -1,8 +1,8 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 import MainView from '@/views/MainView.vue'
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHashHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
@@ -38,7 +38,7 @@ const router = createRouter({
         {
           path: '/info',
           name: 'AttendeeInfo',
-          component: () => import('../views/AttendeeInfoView.vue')
+          component: () => import('../views/AttendeeInfoView.vue'),
         },
       ],
     },
