@@ -7,7 +7,7 @@
         <h1 class="sub-title">Focus on Give Up, Perseverance, and Strategic Behavior</h1>
         <div class="event-details">
           <div class="event-detail"><i class="icon-calendar"></i> April 9-11, 2025</div>
-          <div class="event-detail"><i class="icon-location"></i> School of Medicine, Fudan University, Shanghai</div>
+          <div class="event-detail"><i class="icon-location"></i> Fenglin Campus, Fudan University, Shanghai</div>
         </div>
       </div>
     </div>
@@ -46,7 +46,8 @@
       <div class="organizers-section">
         <h3>Organizing Committee</h3>
         <div class="divider-small"></div>
-        <p>Dr. Na De, Dr. Yu Gu, Dr. Yue Li, Dr. Jifen Shi (Fudan University) and Dr. Tifei Yuan (Shanghai Jiao Tong
+        <p>Dr. Nashat Abumaria, Dr. Yu Gu, Dr. Yue Li, Dr. Jifen Shi (Fudan University) and Dr. Tifei Yuan (Shanghai
+          Jiao Tong
           University).</p>
       </div>
     </div>

@@ -107,7 +107,7 @@ const agenda = [
       },
       {
         time: "10:15 - 10:35",
-        type: "keynote",
+        type: "talk",
         title: "The Modulation of Persevering Drug Administration by Serotonin",
         speakers: [
           {
@@ -119,7 +119,7 @@ const agenda = [
       },
       {
         time: "10:35 - 10:55",
-        type: "keynote",
+        type: "talk",
         title: "Modeling Reinforcement-Based Cognitive Biases in Animal Models of Mental Disorders and Addictions",
         speakers: [
           {
@@ -131,7 +131,7 @@ const agenda = [
       },
       {
         time: "10:55 - 11:15",
-        type: "keynote",
+        type: "talk",
         title: "The posterior parietal cortex mediates rarity-induced decision bias and learning under uncertainty",
         speakers: [
           {
@@ -143,7 +143,7 @@ const agenda = [
       },
       {
         time: "11:15 - 11:35",
-        type: "keynote",
+        type: "talk",
         title: "Behavioral switch from action to no action when facing prolonged uncontrollability or repeated failure",
         speakers: [
           {
@@ -165,7 +165,7 @@ const agenda = [
     sessions: [
       {
         time: "13:00 - 13:20",
-        type: "keynote",
+        type: "talk",
         title: "Hole-brain and whole-body computations for behavior and physiology",
         speakers: [
           {
@@ -177,7 +177,7 @@ const agenda = [
       },
       {
         time: "13:20 - 13:40",
-        type: "keynote",
+        type: "talk",
         title: "Chronic Stress Reinforces the BLA-mPFC-LHb Neural Circuit Initiating Depression",
         speakers: [
           {
@@ -189,7 +189,7 @@ const agenda = [
       },
       {
         time: "13:40 - 14:00",
-        type: "keynote",
+        type: "talk",
         title: "Coordinated hippocampal ensemble dynamics underlie reliable representations of perception and memory",
         speakers: [
           {
@@ -201,7 +201,7 @@ const agenda = [
       },
       {
         time: "14:00 - 14:20",
-        type: "keynote",
+        type: "talk",
         title: "SimSort: A Powerful Framework for Spike Sorting by Large-Scale Electrophysiology Simulation",
         speakers: [
           {
@@ -213,7 +213,7 @@ const agenda = [
       },
       {
         time: "14:20 - 14:40",
-        type: "keynote",
+        type: "talk",
         title: "The Evolution and Regulation of Rhythms in Complex Life Systems",
         speakers: [
           {
@@ -225,7 +225,7 @@ const agenda = [
       },
       {
         time: "14:40 - 15:00",
-        type: "keynote",
+        type: "talk",
         title: "Modeling individual variability of neural computations underlying flexible decisions",
         speakers: [
           {
@@ -242,7 +242,7 @@ const agenda = [
       },
       {
         time: "15:15 - 15:35",
-        type: "keynote",
+        type: "talk",
         title: "Brain stimulation for drug addiction: targeting the prefrontal cortex",
         speakers: [
           {
@@ -254,7 +254,7 @@ const agenda = [
       },
       {
         time: "15:35 - 15:55",
-        type: "keynote",
+        type: "talk",
         title: "Autism Etiology, Early Diagnosis, and Comprehensive Intervention: Translational Research from Bench to Bedside",
         speakers: [
           {
@@ -266,7 +266,7 @@ const agenda = [
       },
       {
         time: "15:55 - 16:15",
-        type: "keynote",
+        type: "talk",
         title: "The Neural Basis and Neuromodulation of Procrastination Decision-Making",
         speakers: [
           {
@@ -278,7 +278,7 @@ const agenda = [
       },
       {
         time: "16:15 - 16:35",
-        type: "keynote",
+        type: "talk",
         title: "Fine-grained Emotion Neural Encoding and Decoding",
         speakers: [
           {
@@ -290,7 +290,7 @@ const agenda = [
       },
       {
         time: "16:35 - 16:55",
-        type: "keynote",
+        type: "talk",
         title: "Unethical amnesia brain: Memory and metacognitive distortion induced by dishonesty",
         speakers: [
           {
@@ -463,6 +463,13 @@ const activeDay = computed(() => agenda[activeTabIndex.value]);
   /* 深蓝色文字 */
 }
 
+.session-talk .session-type {
+  background-color: #d7e9f7;
+  /* 淡蓝绿色背景 */
+  color: #2471a3;
+  /* 蓝绿色文字 */
+}
+
 .session-opening .session-type {
   background-color: #ede2f5;
   /* 淡紫色背景 */
@@ -513,6 +520,10 @@ const activeDay = computed(() => agenda[activeTabIndex.value]);
   /* 深蓝色 */
 }
 
+.session-talk {
+  border-left-color: #2471a3;
+  /* 蓝绿色 */
+}
 
 .session-opening {
   border-left-color: #9b59b6;
