@@ -101,21 +101,21 @@ const agenda = [
         ],
       },
       {
-        time: "10:00 - 10:15",
-        type: "break",
-        title: "Coffee Break",
-      },
-      {
-        time: "10:15 - 10:35",
-        type: "talk",
-        title: "The Modulation of Persevering Drug Administration by Serotonin",
+        time: "10:00 - 10:20",
+        type: "keynote",
+        title: "Hole-brain and whole-body computations for behavior and physiology",
         speakers: [
           {
-            name: "Yue Li",
-            affiliation: "State Key Laboratory of Medical Neurobiology, MOE Frontiers Center for Brain Science, Institutes of Brain Science, Fudan University",
-            image: `${baseUrl}agenda/YueLi.png`
+            name: "Misha Benjamin Ahrens",
+            affiliation: "Howard Hughes Medical Institute, Janelia Research Campus",
+            image: `${baseUrl}agenda/MishaBenjaminAhrens.png`
           }
-        ],
+        ]
+      },
+      {
+        time: "10:20 - 10:35",
+        type: "break",
+        title: "Coffee Break",
       },
       {
         time: "10:35 - 10:55",
@@ -166,12 +166,12 @@ const agenda = [
       {
         time: "13:00 - 13:20",
         type: "talk",
-        title: "Hole-brain and whole-body computations for behavior and physiology",
+        title: "The Modulation of Persevering Drug Administration by Serotonin",
         speakers: [
           {
-            name: "Misha Benjamin Ahrens",
-            affiliation: "Howard Hughes Medical Institute, Janelia Research Campus",
-            image: `${baseUrl}agenda/MishaBenjaminAhrens.png`
+            name: "Yue Li",
+            affiliation: "State Key Laboratory of Medical Neurobiology, MOE Frontiers Center for Brain Science, Institutes of Brain Science, Fudan University",
+            image: `${baseUrl}agenda/YueLi.png`
           }
         ],
       },
@@ -255,11 +255,11 @@ const agenda = [
       {
         time: "15:35 - 15:55",
         type: "talk",
-        title: "Autism Etiology, Early Diagnosis, and Comprehensive Intervention: Translational Research from Bench to Bedside",
+        title: "Accelerated continuous theta-burst stimulation (a-cTBS) targeting the left primary motor cortex (M1) improves social communication impairment in autistic children",
         speakers: [
           {
             name: "Fei Li",
-            affiliation: "Department of Developmental and Behavioural Paediatric & Child Primary Care, Shanghai Key Laboratory of Children’s Environmental Health, Xinhua Hospital, Shanghai Jiao Tong University",
+            affiliation: "Department of Developmental and Behavioural Paediatric & Child Primary Care, Shanghai Key Laboratory of Children's Environmental Health, Xinhua Hospital, Shanghai Jiao Tong University",
             image: `${baseUrl}agenda/FeiLi.png`
           }
         ],
